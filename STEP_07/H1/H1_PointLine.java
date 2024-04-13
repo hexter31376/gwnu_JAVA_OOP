@@ -1,6 +1,6 @@
 import java.io.*;
-package line;
 
+import line.*;
 class H1_PointLine{
     public static void main(String[] args) throws IOException {
 
@@ -12,7 +12,7 @@ class H1_PointLine{
 
         Line ln = new Line(x, y, a, b);
 
-        dl = ln.get.dl();
-        System.out.printf("dl = %f\n", dl);
+        dl = ln.get_dl();
+        System.out.print("dl ="+dl);
     }
 }

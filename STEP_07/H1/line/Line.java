@@ -1,6 +1,6 @@
 package line;
-
-public class Line extends point.Point{
+import point.*;
+public class Line extends Point{
     public int a, b;
 
     public Line(int x, int y, int a, int b){
