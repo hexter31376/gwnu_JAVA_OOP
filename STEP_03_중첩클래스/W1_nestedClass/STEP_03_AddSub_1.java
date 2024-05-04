@@ -55,7 +55,7 @@ class STEP_03_AddSub_1 {
 
         k = add1.add2c(i, j); // 정수와 정수 더하기
         z = sub1.sub2c(x, y); // 실수와 실수 빼기
-        m = addsub.total; // 총합 출력
+        m = addsub.total; // 총합 저장
 
         System.out.printf("%d + %d = %d(%f, %d)\n", i, j, k, z, m); // i + j = 정수 합k(실수 차k, 정수 총합) 출력하기
     }
