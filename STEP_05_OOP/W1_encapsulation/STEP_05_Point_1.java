@@ -1,4 +1,4 @@
-#import java.io.*;
+import java.io.*;
 
 class Point_1 { // 좌표 클래스
     int x; // x좌표
@@ -16,11 +16,11 @@ class STEP_05_Point_1 {
         x2 = System.in.read() - '0'; // 문자 입력받고 정수화시키기
         y2 = System.in.read() - '0'; // 문자 입력받고 정수화시키기
 
-        pnt1 = new Point_1(); // Point_1 클래스 형태의 객체를 생성하고 그 객체를 pnt에 할당
+        pnt1 = new Point_1(); // Point_1 클래스 형태의 객체를 생성하고 그 객체를 pnt1에 할당
         pnt1.x = x1; // pnt1의 x를 x1로 설정
         pnt1.y = y1; // pnt1의 y를 y1으로 설정
 
-        pnt2 = new Point_1();
+        pnt2 = new Point_1(); // Point_1 클래스 형태의 객체를 생성하고 그 객체를 pnt2에 할당
         pnt2.x = x2; // pnt2의 x를 x2로 설정
         pnt2.y = y2; // pnt2의 y를 y1으로 설정
 
