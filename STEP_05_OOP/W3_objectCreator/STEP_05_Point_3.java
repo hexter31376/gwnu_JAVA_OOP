@@ -55,8 +55,8 @@ class STEP_05_Point_3 {
         x2 = System.in.read() - '0'; // 문자 입력받고 정수화시키기
         y2 = System.in.read() - '0'; // 문자 입력받고 정수화시키기
 
-        pnt1 = new Point_3(x1, y1); // Point_2 클래스 형태의 객체를 생성하고 그 객체를 pnt1에 할당 초기값으로 x1과 y1 할당
-        pnt2 = new Point_3(x2, y2); // Point_2 클래스 형태의 객체를 생성하고 그 객체를 pnt2에 할당 초기값으로 x2와 y2 할당
+        pnt1 = new Point_3(x1, y1); // Point_3 클래스 형태의 객체를 생성하고 그 객체를 pnt1에 할당 초기값으로 x1과 y1 할당
+        pnt2 = new Point_3(x2, y2); // Point_3 클래스 형태의 객체를 생성하고 그 객체를 pnt2에 할당 초기값으로 x2와 y2 할당
 
         dl = Math.sqrt(Math.pow(pnt1.get_x() - pnt2.get_x(), 2) + Math.pow(pnt1.get_y() - pnt2.get_y(), 2)); // 선분의 길이 구하고 dl에 저장
 
