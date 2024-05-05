@@ -1,4 +1,4 @@
-class Add_2 {
+class Add_4 {
     int total; // 총 합을 저장할 필드
 
     int add2c(int a, int b){ // 정수 a, 정수 b 매개변수
