@@ -1,6 +1,6 @@
 #import java.io.*;
 
-class Point_1 {
+class Point_1 { // 좌표 클래스
     int x; // x좌표
     int y; // y좌표
 }
