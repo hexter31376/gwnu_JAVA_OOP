@@ -100,7 +100,7 @@ class STEP_06_PointLine_2 {
         double dl2 = line2.get_dl(); // line2 객체의 선분 길이 얻기
 
         boolean b1 = line1.equalTo(line2); // line1 자기 자신과 line2가 같은지 비교
-        boolean b2 = Line_2.compareTwo(line1, line2); // Line_2 클래스를 바로 생성하고 line1, line2를 매개변수로 주어서 비교
+        boolean b2 = Line_2.compareTwo(line1, line2); // Line_2 클래스를 바로 정적으로 생성하고 line1, line2를 매개변수로 주어서 비교
 
         System.out.printf("dl1 = %f, dl2 = %f, b1 = %b, b2 = %b\n", dl1, dl2, b1, b2); // dl1, dl2, b1, b2 출력
     }
