@@ -9,7 +9,7 @@ class STEP_05_Point_1 {
     public static void main(String[] args) throws IOException{
         Point_1 pnt1, pnt2; // 쓰고자 하는 클래스를 지정할 수 있는 객체 지시자 pnt1, pnt2 선언
         int x1, y1, x2, y2; // 사용자에게 입력받을 정수 x1, y1, x2, y2 선언
-        double dl;
+        double dl; // 선분의 길이 dl 선언
 
         x1 = System.in.read() - '0'; // 문자 입력받고 정수화시키기
         y1 = System.in.read() - '0'; // 문자 입력받고 정수화시키기
