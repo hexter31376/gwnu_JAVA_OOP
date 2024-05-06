@@ -1,9 +1,9 @@
 import kor.point.*; // 클래스 경로 생략을 위한 import
 
-public class Line_6 extends Point_6 { // point 패키지의 Point_6클래스를 상속받은 Line_6클래스 정의
+public class Line_7 extends Point_7 { // point 패키지의 Point_6클래스를 상속받은 Line_6클래스 정의
     int a, b;
 
-    public Line_6(int x, int y, int a, int b){ // 부모 클래스 필드 x와 y, 자식 클래스(지금 이 클래스) 필드 a, b 입력받을때의 객체 생성자 line_5 정의
+    public Line_7(int x, int y, int a, int b){ // 부모 클래스 필드 x와 y, 자식 클래스(지금 이 클래스) 필드 a, b 입력받을때의 객체 생성자 line_5 정의
         super(x, y); // this.x = x this.y = y와 동치이나 필드 x와 y는 부모 클래스의 내용이므로 super메소드를 이용해 설정해 주어야 합니다.
         this.a = a;
         this.b = b;
