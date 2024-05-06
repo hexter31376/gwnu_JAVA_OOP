@@ -1,4 +1,4 @@
-interface Measure {
+interface Measure { // 인터페이스 생성
     public double max(); // max 함수 형태 정의
     double min(); // min 함수 형태 정의
     double avg(); // avg 함수 형태 정의
@@ -53,7 +53,7 @@ class Humidity implements Measure {
 
         double mx = H_data[0]; // mx 값 초과 방지용 초기화
         for(int i = 1; i < H_data.length; i++){
-            if(mx < H_data[i]){ // H_data의 i번째 요소가 더 크면
+            if(H_data[i] <= 100 && mx < H_data[i]){ // 100 이하이고 H_data의 i번째 요소가 더 크면
                 mx = H_data[i]; // mx를 H_data의 i번째 요소로 교체
             }
         }
@@ -66,7 +66,7 @@ class Humidity implements Measure {
 
         double mn = H_data[0]; // mn 값 초과 방지용 초기화
         for(int i = 1; i < H_data.length; i++){
-            if(mn > H_data[i]){ // H_data의 i번째 요소가 더 작으면
+            if(H_data[i] >= 0 && mn > H_data[i]){ // 0 이상이고 H_data의 i번째 요소가 더 작으면
                 mn = H_data[i]; // mn를 H_data의 i번째 요소로 교체
             }
         }
