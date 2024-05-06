@@ -32,7 +32,9 @@ class STEP_08_Point_1 {
         pnt1 = new Point_1(x1, y1); // pnt1 객체 생성
         pnt2 = new Point_1(x2, y2); // pnt2 객체 생성
 
-        dl = Math.sqrt(Math.pow(, 2) + Math.pow(, 2)); // 선분의 길이 구하고 dl에 저장
+        dl = Math.sqrt(Math.pow(pnt1.get_x() - pnt2.get_x(), 2) + Math.pow(pnt1.get_y() - pnt2.get_y(), 2)); // 선분의 길이 구하고 dl에 저장
+        
+        System.out.printf("dl = %f\n", dl); // dl 출력
     }
 }
 
