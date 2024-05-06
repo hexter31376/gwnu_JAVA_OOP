@@ -18,3 +18,9 @@ class STEP_07_PointLine_3 {
         System.out.printf("dl = %f\n", dl); // dl 출력
     }
 }
+
+// javac STEP_07_PointLine_3.java
+// cd work; javac -cp .. ../STEP_07_PointLine_3.java
+
+// java STEP_07_PointLine_3
+// cd work; java -cp .. STEP_07_PointLine_3
