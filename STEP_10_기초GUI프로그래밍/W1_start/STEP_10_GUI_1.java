@@ -23,11 +23,11 @@ public class STEP_10_GUI_1 {
         panel.add(btn_click); // panel에 btn_click 객체 추가
         panel.add(btn_end); // panel에 btn_end 객체 추가
 
-        frame.getContentPane().add(panel);
-        frame.pack();
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setVisible(true);
+        frame.getContentPane().add(panel); // frame의 컨텐츠 패널에 panel 추가
+        frame.pack(); // frame의 크기를 컨텐츠에 맞게 자동으로 조정
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // 프레임이 닫힐 때 : 프로그램 종료
+        frame.setVisible(true); // 프레임을 화면에 표시
 
-        System.out.println("Console thread is going out !!!");
+        System.out.println("Console thread is going out !!!"); // gui 시작을 알리는 콘솔 메세지
     }
 }
