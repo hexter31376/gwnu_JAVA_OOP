@@ -20,7 +20,7 @@ public class Line_5 extends Point_5 { // point 패키지의 Point_5클래스를 
         this.a = a;
     }
 
-    void set_y(int b){ // b좌표 입력받는 메소드
+    void set_b(int b){ // b좌표 입력받는 메소드
         this.b = b;
     }
 
