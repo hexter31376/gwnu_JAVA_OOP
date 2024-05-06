@@ -18,3 +18,9 @@ class STEP_07_PointLine_4 {
         System.out.printf("dl = %f\n", dl); // dl 출력
     }
 }
+
+// javac STEP_07_Point_4.java (해당 파일 이후만 컴파일)
+// cd work; javac -cp ".." ../STEP_07_PointLine_4.java
+
+// java STEP_07_PointLine_4 (작업 디렉토리)
+// cd work; java -cp ".." STEP_07_PointLine_4
