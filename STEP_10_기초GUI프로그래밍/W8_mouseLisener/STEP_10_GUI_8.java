@@ -36,7 +36,7 @@ public class STEP_10_GUI_8 {
                 System.exit(0);
             }
         });
-        ImageIcon img = new ImageIcon("보노보노.jpeg");
+        ImageIcon img = new ImageIcon("Img.jpg");
         if(img == null){
             System.out.println("Image not found");
             System.exit(1);
