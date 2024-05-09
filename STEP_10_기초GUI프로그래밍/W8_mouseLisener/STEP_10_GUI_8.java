@@ -11,22 +11,22 @@ class MyMouseListener implements MouseListener, MouseMotionListener {
     public void mouseMoved(MouseEvent e){}
 
     public void mouseDragged(MouseEvent e){ // 마우스 드래그되었을때의 메소드 동작 정의
-        int x = e.getX();
-        int y = e.getY();
+        int x = e.getX(); // 원래 위치에서 얼마나 움직였는가를 측정하기 위한 x좌표값
+        int y = e.getY(); // 원래 위치에서 얼마나 움직였는가를 측정하기 위한 y좌표값
 
-        Component cp = (Component)e.getSource();
-        cp.setLocation(x + cp.getX() - 25, y + cp.getY() - 25);
-        System.out.printf("x = %d, y = %d\n", x, y);
+        Component cp = (Component)e.getSource(); // 원본에 대한 컴포넌트를 얻어서
+        cp.setLocation(x + cp.getX() - 25, y + cp.getY() - 25); // 원본 좌표에 이동한 좌표 더해주고 그것을 위치로 결정
+        System.out.printf("x = %d, y = %d\n", x, y); // 마우스와 이미지 좌표 차 출력
     }
 }
 
 public class STEP_10_GUI_8 {
     STEP_10_GUI_8(){
-        MyMouseListener mymlsnr = new MyMouseListener();
-        JFrame frame = new JFrame();
-        JPanel panel = new JPanel();
+        MyMouseListener mymlsnr = new MyMouseListener(); // 마우스리스너형 객체 지시자 mymlsnr 생성
+        JFrame frame = new JFrame(); // gui의 틀인 frame 객체 생성
+        JPanel panel = new JPanel(); // frame 안에 들어가는 pannel 객체 생성
 
-        panel.setBackground(Color.white);
+        panel.setBackground(Color.white); // 
         panel.setPreferredSize(new Dimension(400, 400));
 
         JButton btn_end = new JButton("End");
