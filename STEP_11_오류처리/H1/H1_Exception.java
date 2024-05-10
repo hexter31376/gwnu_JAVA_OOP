@@ -10,7 +10,7 @@ class OvfException extends Exception {
 
 class GetN {
     int get_n() throws IOException, ZeroException {
-        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in)); // 나중에 System.in.read로 바꾸기
         int n = Integer.parseInt(reader.readLine());
         if (n == 0) {
             throw new ZeroException();
