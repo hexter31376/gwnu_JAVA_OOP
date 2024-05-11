@@ -31,20 +31,20 @@ class AddN {
         if (n > 5) { // 그 값의 범위가 0~4 범위이면
             throw new OvfException(); // 커스텀 OvfException을 throw
         }
-        return n; //
+        return n; // n값을 리턴
     }
 }
 
 class H1_Exception {
     public static void main(String[] args) throws IOException{
-        AddN adn = new AddN(new GetN());
-        try {
-            int n = adn.get_addn();
-            System.out.print(n);
-        } catch (ZeroException e) {
-            System.out.println("ZeroException");
-        } catch (OvfException e) {
-            System.out.println("OvfException");
+        AddN adn = new AddN(new GetN()); // AddN 형 adn 객체지시자에 AddN을 객체화하고 그 객체 생성자에 GetN을 객체화해서 집어넣는다
+        try { // try문으로 코드 실행하고 catch문으로 받을 준비
+            int n = adn.get_addn(); // 객체화한 adn으로 값 입력받기
+            System.out.print(n); 입력받은 값 출력하기
+        } catch (ZeroException e) { // ZeroException이 발생하면
+            System.out.println("ZeroException"); // ZeroException 출력하기
+        } catch (OvfException e) { // OvfException이 발생하면
+            System.out.println("OvfException"); // OvfException 출력하기
         }
     }
 }
