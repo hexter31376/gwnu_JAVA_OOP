@@ -5,7 +5,7 @@ class MyRndException_21 extends Exception { // 커스텀 예외를 Exception 클
 class MyRndException_22 extends Exception { // 커스텀 예외를 Exception 클래스를 상속하여 정의한다.
 }
 
-class Get_n_2 { // 난수 생성 0이면 오류를 반환하고 그렇지 않으면 임의로 생성된 난수를 반환하는 함수
+class Get_n_2 { // 난수 생성 0이면 오류를 try문 안에서 throw한 후 catch하고 그렇지 않으면 임의로 생성된 난수를 반환하는 함수
     int getnum(){
         int n; // 난수를 받아줄 n 선언
         
@@ -24,8 +24,8 @@ class Get_n_2 { // 난수 생성 0이면 오류를 반환하고 그렇지 않으
     }
 }
 
-class Get_m_2 { // get_n_1형 객체를 객체 지시자로 받아들여 추가로 모듈러 연산 값이 연산일때 오류 처리를 위한 클래스
-    Get_n_2 gn; // Get_n_1형 클래스를 받아들일 수 있는 객체 지시자 gn선언
+class Get_m_2 { // get_n_2형 객체를 객체 지시자로 받아들여 추가로 모듈러 연산 값이 연산일때 오류 처리를 위한 클래스
+    Get_n_2 gn; // Get_n_2형 클래스를 받아들일 수 있는 객체 지시자 gn선언
 
     Get_m_2(Get_n_2 gn){ // 객체 생성자의 파라미터로 Get_n_1형 객체 gn을 받아들인다.
         this.gn = gn; // 그 객체의 주소를 이 클래스의 필드에 저장
