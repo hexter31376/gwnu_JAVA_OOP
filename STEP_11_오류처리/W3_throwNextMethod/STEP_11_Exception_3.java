@@ -56,7 +56,7 @@ class STEP_11_Exception_3 {
                 }
             } catch(MyRndException_31 e) { // throw한 예외에 대한 catch를 여기서 처리합니다.
                 System.out.println("MyRndException_31"); // 해당 예외가 발생했음을 출력
-                break; // 반복문 출력
+                break; // 반복문 탈출
             }
             System.out.println("-->" + m); // m 출력하기
         }

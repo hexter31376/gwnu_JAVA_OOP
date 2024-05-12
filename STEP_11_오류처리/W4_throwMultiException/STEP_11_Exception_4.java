@@ -50,10 +50,10 @@ class STEP_11_Exception_4 {
                 m = md.getmod(); // 분기처리 없이 일단 메소드 호출 및 처리를 할 수 있습니다 예외는 try catch에서 알아서 받아줍니다.
             } catch(MyRndException_41 e) { // throw한 예외에 대한 catch를 여기서 처리합니다.
                 System.out.println("MyRndException_41"); // 해당 예외가 발생했음을 출력
-                break; // 반복문 출력
+                break; // 반복문 종료
             } catch(MyModException_42 e) { // throw한 예외에 대한 catch를 하나 더 써서 여기서도 처리합니다.
                 System.out.println("MyModException_42"); // 해당 예외가 발생했음을 출력
-                break; // 반복문 출력
+                break; // 반복문 종료
             }
             System.out.println("-->" + m); // m 출력하기
         }

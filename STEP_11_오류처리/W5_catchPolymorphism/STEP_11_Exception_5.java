@@ -54,7 +54,7 @@ class STEP_11_Exception_5 {
                 } else if(e.toString().equals("MyModException_52")){ // 식별된 예외 클래스 이름이 MyModException_52면
                     System.out.println("MyModException_52"); // 해당 예외가 발생했음을 출력
                 }
-                break; // 반복문 출력
+                break; // 반복문 종료
             }
             System.out.println("-->" + m); // m 출력하기
         }
