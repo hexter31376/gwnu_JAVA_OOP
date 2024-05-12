@@ -2,7 +2,7 @@ import java.io.*; // 자바 입출력을 위한 io패키지 내 모든 클래스
 
 class MyRndException_21 extends Exception { // 커스텀 예외를 Exception 클래스를 상속하여 정의한다.
 }
-class MyRndException_22 extends Exception { // 커스텀 예외를 Exception 클래스를 상속하여 정의한다.
+class MyModException_22 extends Exception { // 커스텀 예외를 Exception 클래스를 상속하여 정의한다.
 }
 
 class Get_n_2 { // 난수 생성 0이면 오류를 try문 안에서 throw한 후 catch하고 그렇지 않으면 임의로 생성된 난수를 반환하는 함수
@@ -39,10 +39,10 @@ class Get_m_2 { // get_n_2형 객체를 객체 지시자로 받아들여 추가�
                 // 객체화된 gn 객체로 getnum메소드를 실행시키고 x에 저장한다음 그 x값이 0 이하이면 혹은
                 // 객체화된 gn 객체로 getnum메소드를 실행시키고 y에 저장한다음 그 y값이 0 이하이면 혹은
                 // 그렇게 나온 결과값의 모듈러 연산 값이 0이면(둘다 0이 아닐때는 그 값을 반환하므로)
-                throw new MyRndException_22(); // if 조건문에 따라 MyRndException_21을 throw하기
+                throw new MyModException_22(); // if 조건문에 따라 MyRndException_21을 throw하기
             }
-        } catch(MyRndException_22 e) { // throw한 예외를 받아줄 catch 문 작성
-            System.out.println("MyRndException_22"); // catch 했을때 할 행동인 MyRndException_21 출력하기
+        } catch(MyModException_22 e) { // throw한 예외를 받아줄 catch 문 작성
+            System.out.println("MyModException_22"); // catch 했을때 할 행동인 MyRndException_21 출력하기
             return -1; // -1 즉 오류 리턴하기
         }
         System.out.printf("<%d %d>", x, y); // x와 y값 출력
@@ -50,7 +50,7 @@ class Get_m_2 { // get_n_2형 객체를 객체 지시자로 받아들여 추가�
     }
 }
 
-class STEP_11_Exeption_2 {
+class STEP_11_Exception_2 {
     public static void main(String[] args) {
         Get_n_2 rd = new Get_n_2(); // Get_n_2 를 객체화시키고 그 값을 rd에 저장
         Get_m_2 md = new Get_m_2(rd); // Get_m_2 를 객체화시키고 객체 생성자에 rd를 넘겨주고 그 값을 md에 저장
