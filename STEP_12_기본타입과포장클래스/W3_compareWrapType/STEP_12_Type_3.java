@@ -10,7 +10,7 @@ class Type_31 {
         if (It1 == It2) {
             System.out.println("It1 == It2");
         } else {
-            System.out.println("It1 != It2"); // win
+            System.out.println("It1 != It2"); // win : 일반적으로 두 객체 지시자를 비교하면 객체의 위치(주소)를 비교하기 때문에 같지 않습니다.
         }
         if (It3 == It4) {
             System.out.println("It3 == It4"); // win
@@ -23,12 +23,12 @@ class Type_31 {
             System.out.println("It1 != It3"); // win
         }
         if (it5 == It1) {
-            System.out.println("it5 == It1"); // win
+            System.out.println("it5 == It1"); // win : auto unboxing으로서 객체화를 이런식으로 풀 수 있습니다.
         } else {
             System.out.println("it5 != It1");
         }
         if (it5 == It5) {
-            System.out.println("it5 == It5"); // win
+            System.out.println("it5 == It5"); // win : auto boxing으로서 일반 자료형을 이런식으로 객체화 할 수 있습니다.
         } else {
             System.out.println("it5 != It5");
         }
