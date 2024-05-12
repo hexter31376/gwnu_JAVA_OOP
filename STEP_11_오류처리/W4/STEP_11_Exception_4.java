@@ -47,9 +47,7 @@ class STEP_11_Exception_4 {
 
         while(true){ // 무한 반복
             try { // throw한 예외를 여기서 넘겨받습니다.
-                if((m = md.getmod()) < 0){ // getmod의 값이 0보다 작으면(리턴 값이 -1이면)
-                    break; // 반복문 탈출
-                }
+                m = md.getmod(); // 분기처리 없이 일단 메소드 호출 및 처리를 할 수 있습니다 예외는 try catch에서 알아서 받아줍니다.
             } catch(MyRndException_41 e) { // throw한 예외에 대한 catch를 여기서 처리합니다.
                 System.out.println("MyRndException_41"); // 해당 예외가 발생했음을 출력
                 break; // 반복문 출력
@@ -62,10 +60,6 @@ class STEP_11_Exception_4 {
         System.out.println("Stop..."); // 예외 발생을 알리는 stop 출력
     }
 }
-
-// 메소드에서 발생한 예외를 꼭 그 메소드에서 받아줄 필요는 없습니다.
-// 그 메소드를 호출하는 다음 메소드로 넘겨줄 수 있는데 이때 메소드에 throws로 어떤 예외를 throw 해줄지를 명시해주어야 합니다.
-// throw로 계속 넘겨줄 수 있는데 이때 어딘가에서는 반드시 try catch로 받아주어야 합니다.
 
 // 예외를 복수로 넘겨줄수도 있습니다
 // 이때 throws에 모든 넘겨줄 모든 예외를 다 적어야 하고
