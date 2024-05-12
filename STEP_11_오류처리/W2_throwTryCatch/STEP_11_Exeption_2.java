@@ -8,6 +8,7 @@ class MyRndException_22 extends Exception { // 커스텀 예외를 Exception 클
 class Get_n_2 { // 난수 생성 0이면 오류를 반환하고 그렇지 않으면 임의로 생성된 난수를 반환하는 함수
     int getnum(){
         int n; // 난수를 받아줄 n 선언
+        
         try { // 예외를 처리할 구문을 try문 안에 넣고
             n = (int)(Math.random() * 10); // 0에서 9까지의 난수를 반환하고 n에 저장
             System.out.println(n); // n 반환
