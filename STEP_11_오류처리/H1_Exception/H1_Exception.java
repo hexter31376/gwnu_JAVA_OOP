@@ -40,7 +40,7 @@ class H1_Exception {
         AddN adn = new AddN(new GetN()); // AddN 형 adn 객체지시자에 AddN을 객체화하고 그 객체 생성자에 GetN을 객체화해서 집어넣는다
         try { // try문으로 코드 실행하고 catch문으로 받을 준비
             int n = adn.get_addn(); // 객체화한 adn으로 값 입력받기
-            System.out.print(n); 입력받은 값 출력하기
+            System.out.print(n); // 입력받은 값 출력하기
         } catch (ZeroException e) { // ZeroException이 발생하면
             System.out.println("ZeroException"); // ZeroException 출력하기
         } catch (OvfException e) { // OvfException이 발생하면
