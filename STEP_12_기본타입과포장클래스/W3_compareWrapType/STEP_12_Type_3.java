@@ -23,12 +23,12 @@ class Type_31 {
             System.out.println("It1 != It3"); // win
         }
         if (it5 == It1) {
-            System.out.println("it5 == It1"); // win : auto unboxing으로서 객체화를 이런식으로 풀 수 있습니다.
+            System.out.println("it5 == It1"); // win 이때는 값을 비교해줍니다 박싱 데이터와 언박싱 데이터의 비교시 자동으로 값 자체를 비교해줍니다.
         } else {
             System.out.println("it5 != It1");
         }
         if (it5 == It5) {
-            System.out.println("it5 == It5"); // win : auto boxing으로서 일반 자료형을 이런식으로 객체화 할 수 있습니다.
+            System.out.println("it5 == It5"); // win 이때는 값을 비교해줍니다 박싱 데이터와 언박싱 데이터의 비교시 자동으로 값 자체를 비교해줍니다.
         } else {
             System.out.println("it5 != It5");
         }
