@@ -57,7 +57,7 @@ class STEP_11_Exception_9 {
                 e.printStackTrace(); // 그 예외의 상세 정보 출력
                 break; // 반복문 탈출
             }
-            System.out.println("-->" + m); // m (모듈러 연산의 결과)을 출력
+            System.out.println("-->" + m); // m (모듈러 연산의 결과)을 출력 
         }
         System.out.println("Stop..."); // 종료를 알리는 Stop... 출력
     }
