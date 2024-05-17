@@ -57,13 +57,13 @@ class H1_Array {
         int[][] ar3;
         ar3 = arrp.get_arr3();
 
-        arrp.ini_arr(ar1);
-        arrp.prt_arr(ar1);
+        Array_Pool.ini_arr(ar1);
+        Array_Pool.prt_arr(ar1);
 
-        arrp.ini_arr(ar2);
-        arrp.prt_arr(ar2);
+        Array_Pool.ini_arr(ar2);
+        Array_Pool.prt_arr(ar2);
 
         arrp.add_arr();
-        arrp.prt_arr(ar3);
+        Array_Pool.prt_arr(ar3);
     }
 }
