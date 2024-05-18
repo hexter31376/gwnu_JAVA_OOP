@@ -33,7 +33,7 @@ class ArrayList_51 { // 학생 클래스 배열을 만들고 그 학생 클래�
         for (Student sb: std){ // 배열 요소의 길이만큼 반복 // 배열 반복문
             System.out.printf("%s", sb.getName());
         }
-        System.out.printf("\n");
+        System.out.printf("\n"); // 개행용 프린트 구문
     }
 }
 
@@ -50,7 +50,7 @@ class ArrayList_52 {
         while (it.hasNext()){ // it의 다음 요소가 없을때 까지
             System.out.printf("%s", it.next().getName()); // it의 다음요소의 이름을 출력
         }
-        System.out.printf("\n");
+        System.out.printf("\n"); // 개행용 프린트 구문
     }
 }
 
