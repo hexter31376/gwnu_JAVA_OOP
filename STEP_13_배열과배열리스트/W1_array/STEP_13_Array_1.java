@@ -1,4 +1,4 @@
-class Array_11 {
+class Array_11 { // 정수 1차원 배열 테스트
     void type_test(){
         int[] data1; // 배열을 클래스 형식으로 선언하는 이 방식을 추천합니다.
         int data2[]; // c언어 스타일도 가능하지만 별로 추천되지는 않습니다.
@@ -16,7 +16,7 @@ class Array_11 {
     }
 }
 
-class Array_12 {
+class Array_12 { // 정수 2차원 배열 테스트
     void type_test(){
         int[][] data1; // 이차원 배열도 배열을 클래스 형식으로 선언하는 이 방식을 추천합니다.
         int data2[][]; // 역시 c언어 스타일도 가능하지만 별로 추천되지는 않습니다.
@@ -34,7 +34,7 @@ class Array_12 {
     }
 }
 
-class Array_13 {
+class Array_13 { // 2차원 배열의 다양한 할당 테스트
     void type_test(){
         int[] data0 = {00, 01, 02}; // 데이터가 성립합니다. 컴파일러가 자동으로 배열의 크기를 3으로 잡아줍니다.
         int[] data1 = {10, 11, 12, 13}; // 데이터가 성립합니다. 컴파일러가 자동으로 배열의 크기를 4으로 잡아줍니다.
