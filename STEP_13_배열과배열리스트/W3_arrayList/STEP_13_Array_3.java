@@ -62,8 +62,8 @@ class ArrayList_33 {
 public class STEP_13_Array_3 {
 
     public static void main(String[] args) {
-        new ArrayList_31().arrayList_test();
-        new ArrayList_32().arrayList_test();
-        new ArrayList_33().arrayList_test();
+        new ArrayList_31().arrayList_test(); // 클래스 객체화 및 메소드 실행
+        new ArrayList_32().arrayList_test(); // 클래스 객체화 및 메소드 실행
+        new ArrayList_33().arrayList_test(); // 클래스 객체화 및 메소드 실행
     }
 }
