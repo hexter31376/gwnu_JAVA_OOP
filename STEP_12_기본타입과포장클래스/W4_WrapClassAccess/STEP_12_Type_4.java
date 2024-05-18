@@ -1,63 +1,61 @@
-class Type_31 {
+class Type_41 {
     void type_test(){
-        Integer It1 = new Integer(0x10);
-        Integer It2 = new Integer(0x10);
-        Integer It3 = 0x10;
-        Integer It4 = 0x10;
-        int it5 = It1;
-        Integer It5 = it5;
+        // 각 클래스 자료형을 new 연산자로 생성
+        Byte Bt = new Byte((byte)65);
+        Short St = new Short((short)0x41);
+        Character Ch = new Character('A');
+        Integer It = new Integer(0101);
+        Long Lg = new Long(65);
+        Float Ft = new Float(1e-2f);
+        Double Db = new Double(0.01);
 
-        if (It1 == It2) {
-            System.out.println("It1 == It2");
-        } else {
-            System.out.println("It1 != It2"); // win : 일반적으로 두 객체 지시자를 비교하면 객체의 위치(주소)를 비교하기 때문에 같지 않습니다.
-        }
-        if (It3 == It4) {
-            System.out.println("It3 == It4"); // win
-        } else {
-            System.out.println("It3 != It4"); 
-        }
-        if (It1 == It3) {
-            System.out.println("It1 == It3");
-        } else {
-            System.out.println("It1 != It3"); // win
-        }
-        if (it5 == It1) {
-            System.out.println("it5 == It1"); // win : auto unboxing으로서 객체화를 이런식으로 풀 수 있습니다.
-        } else {
-            System.out.println("it5 != It1");
-        }
-        if (it5 == It5) {
-            System.out.println("it5 == It5"); // win : auto boxing으로서 일반 자료형을 이런식으로 객체화 할 수 있습니다.
-        } else {
-            System.out.println("it5 != It5");
-        }
+        double sum = Bt.byteValue() + St.shortValue() + Ch.charValue() + It.intValue() + Lg.longValue() + Ft.floatValue() + Db.doubleValue(); // 각 클래스 형 그대로 뱉어내고 더하는 메소드의 시연
+        String str = Bt.toString() + St.toString() + Ch.toString() + It.toString() + Lg.toString() + Ft.toString() + Db.toString(); // 각 클래스 형을 문자형을 뱉어내고 더하는 메소드의 시연
+
+        System.out.println(sum); // 정수 합 출력 // 값의 합
+        System.out.println(str); // 문자열의 합 출력 // 문자 이어붙이기
     }
 }
 
-class Type_32 {
+class Type_42 {
     void type_test(){
-        String Sg1 = new String("Java");
-        String Sg2 = new String("Java");
-        String Sg3 = "Java";
-        String Sg4 = "Java";
+        Byte Bt = new Byte((byte)65);
+        Character Ch = new Character('A');
+        Integer It = new Integer(0101);
+        
+        // equals를 byte로 타입캐스팅한 65와 타입캐스팅하지 않은 65와 비교하여 참 거짓 비교
+        // equals는 자료형도 같아야 참을 출력
+        if(Bt.equals((byte)65)){
+            System.out.println("Bt.equals() == (byte)65"); // win
+        } else {
+            System.out.println("Bt.equals() != (byte)65");
+        }
+        if(Bt.equals(65)){
+            System.out.println("Bt.equals() == 65");
+        } else {
+            System.out.println("Bt.equals() != 65"); // win
+        }
 
-        if (Sg1 == Sg2) {
-            System.out.println("Sg1 == Sg2");
+        // byteValue를 byte로 타입캐스팅한 65와 타입캐스팅하지 않은 65와 비교하여 참 거짓 비교
+        // byteValue는 형이 달라도 값만 같으면 참을 출력
+        if(Bt.byteValue() == (byte)65){
+            System.out.println("Bt.byteValue() == (byte)65"); // win
         } else {
-            System.out.println("Sg1 != Sg2"); // win
+            System.out.println("Bt.byteValue() != (byte)65");
         }
-        if (Sg3 == Sg4) {
-            System.out.println("Sg3 == Sg4"); // win
+        if(Bt.byteValue() == 65){
+            System.out.println("Bt.byteValue() == 65"); // win
         } else {
-            System.out.println("Sg3 != Sg4");
+            System.out.println("Bt.byteValue() != 65");
         }
+
+
     }
 }
 
-public class STEP_12_Type_3 {
+public class STEP_12_Type_4 {
     public static void main(String[] args) {
-        new Type_31().type_test(); // Type_31클래스를 객체화하고 그 메소드를 호출
-        new Type_32().type_test(); // Type_32클래스를 객체화하고 그 메소드를 호출
+        new Type_41().type_test(); // Type_41클래스를 객체화하고 그 메소드를 호출
+        new Type_42().type_test(); // Type_42클래스를 객체화하고 그 메소드를 호출
     }
 }
