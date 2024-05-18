@@ -42,21 +42,21 @@ class Array_13 {
         int[][] data4 = {data0, data1, {20, 21}}; // 같은 원리로 변수명을 넣어도 오류가 발생하지 않습니다.
 
         for(int i = 0; i < data4.length; i++){ //data4의 길이만큼 반복
-            for(int j = 0; j < data4[i].length; j++){
-                data4[i][j] = (int)(Math.random() * 10);
-                System.out.printf("<%d, %d>", i, j);
+            for(int j = 0; j < data4[i].length; j++){ // data4의 i번째 배열 요소의 길이만큼 반복
+                data4[i][j] = (int)(Math.random() * 10); // 각각의 저장 공간에 10자리수의 정수형 랜덤 넘버 집어넣기
+                System.out.printf("<%d, %d>", i, j); // 현재 행과 열 출력
             }
-            System.out.printf("\n");
+            System.out.printf("\n"); // 개행
         }
-        System.out.printf("data0[0] = %d\n", data0[0]);
+        System.out.printf("data0[0] = %d\n", data0[0]); // 데이터 0의 0번 인덱스의 값 출력
     }
 }
 
 public class STEP_13_Array_1 {
 
     public static void main(String[] args) {
-        new Array_11().type_test();
-        new Array_12().type_test();
-        new Array_13().type_test();
+        new Array_11().type_test(); // 클래스 객체화 및 메소드 실행
+        new Array_12().type_test(); // 클래스 객체화 및 메소드 실행
+        new Array_13().type_test(); // 클래스 객체화 및 메소드 실행
     }
 }
