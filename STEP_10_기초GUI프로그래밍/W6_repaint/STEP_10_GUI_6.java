@@ -74,7 +74,7 @@ public class STEP_10_GUI_6 {
         frame.setVisible(true); // 프레임을 화면에 표시
         while(true){
             Thread.sleep(100); // ms 단위로 프로그램을 잠시 쉽니다.
-            panel.move_circle();
+            panel.move_circle(); // 아까 만들어준 원 다시그리기 메소드를 호출합니다.
         }
     }
     public static void main(String[] args) throws InterruptedException {
