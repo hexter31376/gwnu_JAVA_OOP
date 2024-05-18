@@ -16,7 +16,6 @@ class Student {
 class Array_41 {
     void array_test(){
         int[] data = new int[10];
-
         System.out.println("Array_41");
 
         for(int i = 0; i < data.length; i++){
