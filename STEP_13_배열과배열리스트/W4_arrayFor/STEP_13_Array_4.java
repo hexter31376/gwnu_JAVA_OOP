@@ -58,7 +58,7 @@ class Array_42 { // 학생 클래스형 클래스 배열 생성 클래스
 public class STEP_13_Array_4 {
 
     public static void main(String[] args) {
-        new Array_41().array_test();
-        new Array_42().array_test();
+        new Array_41().array_test(); // 클래스 객체화 및 메소드 실행
+        new Array_42().array_test(); // 클래스 객체화 및 메소드 실행
     }
 }
