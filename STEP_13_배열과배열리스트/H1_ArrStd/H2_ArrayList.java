@@ -1,8 +1,8 @@
-import java.util.*;
+import java.util.ArrayList;
 
-class Student {
-    private String name;
-    private Integer age;
+class Student{
+    String name;
+    Integer age;
 
     Student(String name, Integer age){
         this.name = name;
@@ -18,8 +18,7 @@ class Student {
 }
 
 class ArrLst_Std{
-    private ArrayList<Student> als;
-
+    ArrayList<Student> als;
     ArrLst_Std(){
         als = new ArrayList<>();
     }
@@ -28,22 +27,48 @@ class ArrLst_Std{
         als.add(new Student(name, age));
     }
 
-    void srtStd() { // Selection sort based on student names
-        for (int i = 0; i &lt; als.size() - 1; i++) {
-            int minIndex = i;
-            for (int j = i + 1; j &lt; als.size(); j++) {
-                if (als.get(j).getName().compareTo(als.get(minIndex).getName()) &lt; 0) {
-                    minIndex = j;
+    void srtStd(){
+        int N = als.size();
+        int maxi, i, j;
+
+        for(i =0; i<N - 1; i++){
+            maxi =i;
+            for(j = i+1; j<N; j++){
+                Student studentmaxi = als.get(maxi);
+                Student studentj = als.get(j);
+
+                if(studentmaxi.getName().compareTo(studentj.getName()) < 0 || (studentmaxi.getName().equals(studentj.getName()) &&
+                studentmaxi.getAge() < studentj.getAge())){
+                    maxi = j;
                 }
             }
-            // Swap the elements
-            Student temp = als.get(minIndex);
-            als.set(minIndex, als.get(i));
-            als.set(i, temp);
+            if(maxi != i){
+                Student temp = als.get(i);
+                als.set(i, als.get(maxi));
+                als.set(maxi, temp);
+            }
+        }
+    }
+
+    void prtStd(){
+        for(Student st: als){
+            System.out.println(st.getName() +" "+st.getAge());
         }
     }
 }
 
-public class H2_ArrayList {
-    
+public class H2_ArrayList{
+    public static void main(String args[]){
+        ArrLst_Std alst = new ArrLst_Std();
+        alst.addStd("Choi", 19);
+        alst.addStd("Hong", 18);
+        alst.addStd("Park", 20);
+        alst.addStd("Choi", 20);
+        alst.addStd("Park", 21);
+
+        alst.prtStd();
+        System.out.println("---------------");
+        alst.srtStd();
+        alst.prtStd();
+    }
 }
