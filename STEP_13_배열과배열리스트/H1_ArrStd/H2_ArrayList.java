@@ -68,7 +68,5 @@ public class H2_ArrayList{
 
         alst.prtStd();
         System.out.println("---------------");
-        alst.srtStd();
-        alst.prtStd();
     }
 }
