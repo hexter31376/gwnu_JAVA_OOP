@@ -18,38 +18,38 @@ public class H1_Calculator_1 implements ActionListener {
 
         inputBuilder = new StringBuilder();
 
-        JButton btn_1 = new JButton("1");
+        JButton btn_1 = new JButton("1"); // 1 버튼 추가
         btn_1.setBounds(124, 100, 40, 30);
         btn_1.addActionListener(this);
 
-        JButton btn_2 = new JButton("2");
+        JButton btn_2 = new JButton("2"); // 2 버튼 추가
         btn_2.setBounds(180, 100, 40, 30);
         btn_2.addActionListener(this);
 
-        JButton btn_3 = new JButton("3");
+        JButton btn_3 = new JButton("3"); // 3 버튼 추가
         btn_3.setBounds(236, 100, 40, 30);
         btn_3.addActionListener(this);
 
-        JButton btn_plus = new JButton("+");
+        JButton btn_plus = new JButton("+"); // + 버튼 추가
         btn_plus.setBounds(124, 150, 40, 30);
         btn_plus.addActionListener(this);
 
-        JButton btn_minus = new JButton("-");
+        JButton btn_minus = new JButton("-"); // - 버튼 추가
         btn_minus.setBounds(180, 150, 40, 30);
         btn_minus.addActionListener(this);
 
-        JButton btn_equal = new JButton("=");
+        JButton btn_equal = new JButton("="); // = 버튼 추가
         btn_equal.setBounds(236, 150, 40, 30);
         btn_equal.addActionListener(this);
 
-        txt_input = new JTextField();
+        txt_input = new JTextField(); // 현재 입력값 표시 공간 추가
         txt_input.setBounds(150, 200, 100, 30);
 
-        txt_total = new JTextField();
+        txt_total = new JTextField(); // 총합 표시 공간 추가
         txt_total.setBounds(150, 250, 100, 30);
 
-        panel.setLayout(null);
-        panel.add(btn_1);
+        panel.setLayout(null); // 패널 추가
+        panel.add(btn_1); //  
         panel.add(btn_2);
         panel.add(btn_3);
         panel.add(btn_plus);
