@@ -12,11 +12,6 @@ class Student { // Student 클래스 선언
     String getName() { // 현재 객체의 이름을 얻는 메소드
         return name;
     }
-
-    @Override
-    public String toString() { // 객체를 문자열로 표현하는 메소드
-        return this.name;
-    }
 }
 
 class StdComparator implements Comparator<Student> { // Comparator 인터페이스를 구현한 StdComparator 클래스
