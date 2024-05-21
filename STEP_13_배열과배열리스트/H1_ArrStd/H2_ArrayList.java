@@ -59,14 +59,17 @@ class ArrLst_Std{
 
 public class H2_ArrayList{
     public static void main(String args[]){
+
         ArrLst_Std alst = new ArrLst_Std();
+
         alst.addStd("Choi", 19);
         alst.addStd("Hong", 18);
         alst.addStd("Park", 20);
         alst.addStd("Choi", 20);
         alst.addStd("Park", 21);
-
         alst.prtStd();
         System.out.println("---------------");
+        alst.srtStd();
+        alst.prtStd();
     }
 }
