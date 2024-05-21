@@ -32,7 +32,7 @@ public class STEP_10_GUI_4 implements ActionListener {
         btn_end.addActionListener(new ActionListener() { // new로 따로 객체 지시자 없이 바로 생성해서 엔드리스너 넣어주기
             int i = 0;
             public void actionPerformed(ActionEvent e) { // 행위 메소드 정의
-                System.exit(0); // 프로그램 종료
+                System.exit(i); // 프로그램 종료
             }
         });
         // 일회성 리스너는 이런 식으로 처리하는것이 편합니다.
