@@ -34,11 +34,12 @@ class ArrLst_Std{
         for(i =0; i<N - 1; i++){
             maxi =i;
             for(j = i+1; j<N; j++){
-                Student studentmaxi = als.get(maxi);
-                Student studentj = als.get(j);
+                Student studentmaxi = als.get(maxi); // i에 해당하는 원소를 가져옴
+                Student studentj = als.get(j); // j에 해당하는 원소를 가져옴
 
-                if(studentmaxi.getName().compareTo(studentj.getName()) < 0 || (studentmaxi.getName().equals(studentj.getName()) &&
-                studentmaxi.getAge() < studentj.getAge())){
+                if(studentmaxi.getName().compareTo(studentj.getName()) < 0 || // 해당 원소의 이름을 가져오고 그것의 j와 compareTo를 진행해서 두 문자가 같으면 0을 뱉으므로 같지 않으면이 된다
+                                    (studentmaxi.getName().equals(studentj.getName()) && // i에 해당하는 원소의 이름을 가져오고 그것과 j의 이름이 같으면서 
+                                            studentmaxi.getAge() < studentj.getAge())){ // j의 나이가 i의 나이보다 크다면
                     maxi = j;
                 }
             }
