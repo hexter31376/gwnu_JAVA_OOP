@@ -70,7 +70,7 @@ public class STEP_10_GUI_4 implements ActionListener {
 // 액션 커맨드로 어떤 유형의 이벤트에 호출되었는지를 식별할 수 있습니다
 // getActionComand를 통해 어떤 컴포넌트의 요소에서 호출되었는지 식별이 가능합니다.
 
-// 1. 클래스 자체를 actionListener 인터페이스를 implement한 상태로 만들어주고
+// 1. 클래스 자체를 actionListener 인터페이스를 implements한 상태로 만들어주고
 // 2. 조작할 버튼의 주소를 필드로
 // 3. 메인 gui와 액션리스너 추가 로직을 객체 생성자 안에
 // 4. actionPerformed 로 동작 정의를 마지막으로 해 준 다음
