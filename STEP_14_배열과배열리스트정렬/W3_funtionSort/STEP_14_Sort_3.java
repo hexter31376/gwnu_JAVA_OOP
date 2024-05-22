@@ -29,7 +29,7 @@ class Sort_31 { // 대소비교가 불가능한 일반 클래스의 정렬 테�
         System.out.println("Sort_31..."); // 어떤 클래스를 실행했는지 알려주는 print
 
         Comparator cmp = Comparator.comparing(new mycmp()); // 비교 가능한 키 값을 얻어주는 메소드 mycmp를 Comparator의 comparing메소드에 생성과 동시에 매개변수로 넘겨줍니다.
-        Arrays.sort(std, cmp); // 
+        Arrays.sort(std, cmp); // 해당 객체화된 비교자를 매개변수로 넘겨줍니다.
 
         for (Student s : std) { // 배열 반복문으로 std 순회하고 순회한 값 s에 저장
             System.out.printf("%s ", s.getName()); // s 출력
