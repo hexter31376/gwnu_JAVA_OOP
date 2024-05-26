@@ -65,8 +65,8 @@ class IO_42 {
             n = br.read(chs); // 개별 문자 단위도 입력이 됩니다.
             n = br.read(chs, 0, 1); // 배열인 경우 배열 크기만큼의 문자들이 입력됩니다.
 
-            str1 = br.readLine();
-            str2 = br.readLine();
+            str1 = br.readLine(); // 한줄을 읽어냅니다. 근데 개행을 안해서 빈 문자열을 읽습니다.
+            str2 = br.readLine(); // 문자열 2개를 읽어냅니다.
 
             System.out.printf("%c %c %c\n", ch1, ch2, ch3); // 문자 순서대로 출력
             System.out.println("str1 = " + str1); // 문자열 1 출력
