@@ -30,7 +30,7 @@ class IO_51 {
                     System.out.println(word); // 문자열 출력
                 }
             }
-            br.close();
+            br.close(); // 파일 닫기
         } catch (IOException e) {
             System.err.println("Line read error"); // 라인을 제대로 읽지 못했음을 알려주고
             System.exit(2); // 오류코드 2 반환 후 프로그램 종료
