@@ -84,3 +84,7 @@ public class STEP_15_IO_4 {
         new IO_42().io_test();
     }
 }
+
+// 문자열 단위 입출력을 위해서 File[Writ/read]er를 객체화 하고 Buffered[Writ/Read]er 객체화 하여 버퍼 단위 입출력을 사용합니다.
+// 당연히 문자 단위 저장이므로 txt 파일로 저장이 됩니다.
+// Buffered[Writ/Read]er는 줄 단위, 문자열 단위, 정수 단위 등등, 여러 단위로 읽거나 쓸 수 있는 기능을 제공합니다.
