@@ -1,0 +1,3 @@
+I,am happy.
+you are,happy.
+He is\tunhappy.
