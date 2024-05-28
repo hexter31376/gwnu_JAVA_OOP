@@ -51,41 +51,42 @@ class IO_52 {
 
         System.out.println("IO_52..."); // 해당 클래스가 시작되었음을 출력
 
-        Scanner scan = new Scanner(fr);
+        Scanner scan = new Scanner(fr); // Scanner 클래스 scan을 동적 생성하고 fr포인터를 줌으로서 파일을 읽어낼 준비를 함
 
-        while (scan.hasNextLine()) {
-            String line = scan.nextLine();
-            StringTokenizer tkn = new StringTokenizer(line, " ,\t\n\r");
+        while (scan.hasNextLine()) { // 줄별로 입력이 불가능할때까지, hasNextLine은 그 자체로 줄단위 입력을 받을 수 없다면 0을 반환, 조건 판단용이다.
+            String line = scan.nextLine(); // 한 줄의 데이터를 line에 저장하고 다음 줄로 커서를 옮긴다.
+            StringTokenizer tkn = new StringTokenizer(line, " ,\t\n\r"); // 문자열을 토큰화할, 즉 원하는 기호를 만나면 그 기호를 기준으로 문자열을 끊어서 읽어줄 StringTokenizer 클래스를 선언하고 초기값으로 나누어줄 기준 구분 문자를 전부 입력
 
-            while (tkn.hasMoreTokens()) {
-                String word = tkn.nextToken();
+            while (tkn.hasMoreTokens()) { // 토큰화할 문자열이 있을 때에만
+                String word = tkn.nextToken(); // 토큰화, 즉 위의 기준에 따라 조각낸 문자열을 word에 저장
 
-                System.out.println(word);
+                System.out.println(word); // word 출력하고 개행
             }
         }
 
-        scan.close();
+        scan.close(); // Scanner를 통한 파일 닫기
     }
 }
 
 class IO_53 {
     void io_test () {
         Scanner scan = null;
+
         try {
-            scan = new Scanner(new File("data.txt"));
-        } catch (Exception e) {
+            scan = new Scanner(new File("data.txt")); // 스캐너의 객체화와 동시에 파일을 읽어들이기 위한 File 클래스를 객체화해서 넣어줍니다.(익명 클래스) 
+        } catch (FileNotFoundException e) {
             System.err.println("Can`t open 'data.txt' for input..."); // 파일을 못찾았음을 알려주고
             System.exit(1); // 오류코드 1 반환 후 프로그램 종료
         }
 
         System.out.println("IO_53..."); // 해당 클래스가 시작되었음을 출력
 
-        scan.useDelimiter("[ ,\t\n\r]+"); // scan.useDelimiter("[\\s,]+");
-        while (scan.hasNext()) {
-            String word = scan.next();
-            System.out.println(word);
+        scan.useDelimiter("[ ,\t\n\r]+"); // scan.useDelimiter("[\\s,]+"); // 스캐너에 기본 내장된 useDelimiter를 통해 토큰 문자열 기준을 세워줍니다. 이러면 scanner는 문자열을 자동으로 토큰화 해서 읽어줍니다.
+        while (scan.hasNext()) { // 읽을 문자열이 없을 때까지
+            String word = scan.next(); // 문자열을 저장 // 이전의 useDelimiter에 의해 자동 토큰화된 순서로 입력이 됩니다.
+            System.out.println(word); // word 출력
         }
-        scan.close();
+        scan.close(); // Scanner를 통한 파일 닫기
     }
 }
 
