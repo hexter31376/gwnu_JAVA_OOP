@@ -3,9 +3,9 @@ import java.awt.event.*;
 import javax.swing.*;
 
 class FrameThread {
-    JFrame frame;
-    JPanel panel, panel_other;
-    JLabel lbl_ball;
+    JFrame frame; // 프레임 선언
+    JPanel panel, panel_other; // 현재, 다른 패널 선언
+    JLabel lbl_ball; // 이동시킬 공 라벨 선언
 
     FrameThread (boolean flag, JLabel lbl_ball, int x, int y) {
         frame = new JFrame();
