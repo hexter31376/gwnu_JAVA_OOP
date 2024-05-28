@@ -70,7 +70,7 @@ class IO_52 {
 
 class IO_53 {
     void io_test () {
-        Scanner scan = null;
+        Scanner scan = null; // Scanner 클래스 scan 객체 지시자를 생성하고
 
         try {
             scan = new Scanner(new File("data.txt")); // 스캐너의 객체화와 동시에 파일을 읽어들이기 위한 File 클래스를 객체화해서 넣어줍니다.(익명 클래스) 
