@@ -75,3 +75,7 @@ public class STEP_15_IO_6 {
     }
 }
 
+
+// 객체를 읽고 쓰는 것도 가능한데 읽고 쓰려는 객체에 Serializable을 이식하고
+// ObjectInputStream을 통해 읽고 쓰는 것이 가능합니다.
+// 다만 iostream이므로 바이너리 파일로 저장되긴 합니다...
