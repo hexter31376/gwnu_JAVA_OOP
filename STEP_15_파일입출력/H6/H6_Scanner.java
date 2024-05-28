@@ -5,10 +5,10 @@ class IO_System_IN {
     void io_test() {
         int total = 0; // total 변수를 초기화
 
-        Scanner scan = null;
+        Scanner scan = null; // 스캐너 클래스 선언
 
         try {
-            scan = new Scanner(System.in);
+            scan = new Scanner(System.in); // 콘솔 입출력을 위한 System.in 클래스를 매개변수로
         } catch (Exception e) {
             System.err.println("error"); // 오류 메시지 출력
             System.exit(1); // 오류 코드 1 반환 후 프로그램 종료
@@ -25,9 +25,10 @@ class IO_System_IN {
 
 class IO_file_IN {
     void io_test () {
-        Scanner scan = null;
+        int total = 0; // 총합을 저장할 변수 total
 
-        int total = 0;
+        Scanner scan = null; // 스캐너 클래스 선언
+
         try {
             scan = new Scanner(new File("data.txt"));
         } catch (Exception e) {
@@ -47,7 +48,7 @@ class IO_file_IN {
 
 public class H6_Scanner {
     public static void main(String[] args) {
-        new IO_file_IN().io_test(); // IO_53 객체 생성 및 메서드 호출
-        new IO_System_IN().io_test(); // 성공
+        new IO_file_IN().io_test(); // 파일 입출력 객체 생성 및 메서드 호출
+        new IO_System_IN().io_test(); // 콘솔 입출력 객체 생성 및 메서드 호출
     }
 }
