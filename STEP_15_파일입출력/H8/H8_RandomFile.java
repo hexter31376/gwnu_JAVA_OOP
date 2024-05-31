@@ -1,5 +1,4 @@
 import java.io.*;
-import java.util.Random;
 
 class Student implements Serializable { // Serializable 인터페이스를 이식해 해당 객체를 ObjectOutputStream이 읽을 수 있게 해 준다.
     String name; // 이름 필드
