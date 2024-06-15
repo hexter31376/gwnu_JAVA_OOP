@@ -16,7 +16,7 @@ public class STEP_10_GUI_5 implements ActionListener {
     JTextField txt;
 
     STEP_10_GUI_5() {
-        JFrame frame = new JFrame("GUI_10_4"); // gui의 틀인 frame 객체 생성
+        JFrame frame = new JFrame("GUI_10_5"); // gui의 틀인 frame 객체 생성
 
         JPanel panel = new MyPanel(); // frame 안에 들어가는 pannel 객체 생성
 
