@@ -1,11 +1,11 @@
 import java.lang.reflect.*;
 
-class Student {
-    String name;
-    int age;
+class Student { // 학생 클래스
+    String name; // 이름 필드
+    int age; // 나이 필드
 
-    Student (String name, int age) {
-        this.name = name;
+    Student (String name, int age) { // 객체 생성자, 학생 이름과 나이를 매개변수로
+        this.name = name; // 
         this.age = age;
     }
 
@@ -33,7 +33,7 @@ class Annotation_11 {
         } catch (NoSuchMethodException e) {
         }
 
-        if (m1 = != null) {
+        if (m1 != null) {
             try {
                 age = Integer.valueOf((String)m1.invoke(st));
             } catch (IllegalAccessException e) {
@@ -42,6 +42,7 @@ class Annotation_11 {
         } else {
             try {
                 m2 = st.getClass().getDeclaredMethod("getAge");
+                age = (int)m2.invoke(st);
             } catch (NoSuchMethodException e) {
             } catch (IllegalAccessException e) {
             } catch (InvocationTargetException e) {
@@ -51,6 +52,16 @@ class Annotation_11 {
     }
 }
 
+class Annotation_12 {
+    Annotation_12 () {
+        Method m1 = null, m2 = null;
+        int age = 0;
+        Student st = new Student("Lee", 19);
+
+        Class<Student> sc = Student.class;
+
+    }
+}
 public class STEP_17_Annotation_1 {
     public static void main(String[] args) {
         
