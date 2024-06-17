@@ -25,17 +25,17 @@ class Student { // 학생 클래스
 class Annotation_11 {
     Annotation_11 () {
         Method m1 = null, m2 = null; // 메소드 클래스 객체 지시자 m1과 m2를 선언하고 그 길이를 
-        int age = 0;
-        Student st = new Student("Lee", 19);
+        int age = 0; // 이름 선언 후 0으로 초기화
+        Student st = new Student("Lee", 19); // 새로운 학생 객체 생성
 
-        try {
-            m1 = st.getClass().getDeclaredMethod("getAge_new");
-        } catch (NoSuchMethodException e) {
+        try { // 예외 캐치하기
+            m1 = st.getClass().getDeclaredMethod("getAge_new"); // st 객체의 클래스를 얻고 그 클래스에서 정의된 메소드를 얻는데 getAge_new라는 이름의 메소드를 얻습니다.
+        } catch (NoSuchMethodException e) { // 없는 메소드 예외 캐치
         }
 
-        if (m1 != null) {
-            try {
-                age = Integer.valueOf((String)m1.invoke(st));
+        if (m1 != null) { //m1이 null이 아니면
+            try { // 예외 캐치하기
+                age = Integer.valueOf((String)m1.invoke(st)); // st에 저장된 메소드를 가지고 옵니다.
             } catch (IllegalAccessException e) {
             } catch (InvocationTargetException e) {
             }
@@ -58,7 +58,7 @@ class Annotation_12 {
         int age = 0;
         Student st = new Student("Lee", 19);
 
-        Class<? extends Student> sc = st.getClass();
+        Class<? extends Student> sc = st.getClass(); // Student 클래스와 그 후손 클래스를 모두 포함하는 st.getClass
         try {
             if ((m1 = sc.getDeclaredMethod("getAge")) != null) {
                 age = (int)m1.invoke(st);
