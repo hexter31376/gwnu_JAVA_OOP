@@ -24,7 +24,7 @@ class Student { // 학생 클래스
 
 class Annotation_11 {
     Annotation_11 () {
-        Method m1 = null, m2 = null;
+        Method m1 = null, m2 = null; // 메소드 클래스 객체 지시자 m1과 m2를 선언하고 그 길이를 
         int age = 0;
         Student st = new Student("Lee", 19);
 
