@@ -5,15 +5,15 @@ class Student { // 학생 클래스
     int age; // 나이 필드
 
     Student (String name, int age) { // 객체 생성자, 학생 이름과 나이를 매개변수로
-        this.name = name; // 
-        this.age = age;
+        this.name = name; // 매개변수 이름을 필드이름에 넣기
+        this.age = age; // 매개변수 이름을 필드 이름에 넣기
     }
 
-    String getName () {
-        return (name);
+    String getName () { // 이름 필드 값 반환 메소드
+        return (name); // 이름 필드 값 리턴
     }
     String getAge_new () { // 나이 필드를 String으로 바꾸어서 리턴
-        return (Integer.toString(age));
+        return (Integer.toString(age)); // 나이 필드를 String으로 반환
     }
     /*
     int getAge () { // 나이를 리턴(주석 처리됨)
@@ -58,12 +58,42 @@ class Annotation_12 {
         int age = 0;
         Student st = new Student("Lee", 19);
 
-        Class<Student> sc = Student.class;
+        Class<? extends Student> sc = st.getClass();
+        try {
+            if ((m1 = sc.getDeclaredMethod("getAge")) != null) {
+                age = (int)m1.invoke(st);
+            }
+        } catch (NoSuchMethodException e) {
+        } catch (IllegalAccessException e) {
+        } catch (InvocationTargetException e) {
+        }
 
+        System.out.println("Annotation_12 : Age = " + age);
+    }
+}
+
+class Annotation_13 {
+    Annotation_13 () {
+        Method m1 = null;
+        int age = 0;
+        Student st = new Student("Lee", 19);
+
+        Class<Student> sc = Student.class;
+        try {
+            m1 = sc.getDeclaredMethod("getAge_new");
+            age = Integer.valueOf((String)m1.invoke(st));
+        } catch (NoSuchMethodException e) {
+        } catch (IllegalAccessException e) {
+        } catch (InvocationTargetException e) {
+        }
+
+        System.out.println("Annotation_13 : Age = " + age);
     }
 }
 public class STEP_17_Annotation_1 {
     public static void main(String[] args) {
-        
+        new Annotation_11();
+        new Annotation_12();
+        new Annotation_13();
     }
 }
