@@ -6,21 +6,21 @@ class Student {
 
     Student (String name, int age) {
         this.name = name;
-        this.age. age;
+        this.age = age;
     }
 
     String getName () {
         return (name);
     }
-    
+
     boolean FlagNew = true;
     String getAge_new () {
         return (Integer.toString(age));
     }
     /* 
-     * int getAge () {
-     *      return (age);
-     * }
+    int getAge () {
+         return (age);
+    }
      */
 }
 
