@@ -35,20 +35,20 @@ class Annotation_11 {
 
         if (m1 != null) { //m1이 null이 아니면
             try { // 예외 캐치하기
-                age = Integer.valueOf((String)m1.invoke(st)); // st에 저장된 메소드를 가지고 옵니다.
-            } catch (IllegalAccessException e) {
-            } catch (InvocationTargetException e) {
+                age = Integer.valueOf((String)m1.invoke(st)); // st 객체 에 저장된 m2에 해당하는 메소드를 가지고 옵니다. 그 메소드의 리턴 값을 string으로 타입캐스팅하고 그 값을 정수형으로 바꾸어줍니다.
+            } catch (IllegalAccessException e) { // IllegalAccessException 받아주기
+            } catch (InvocationTargetException e) { // InvocationTargetException 받아주기
             }
-        } else {
+        } else { // m1이 null 이면
             try {
-                m2 = st.getClass().getDeclaredMethod("getAge");
-                age = (int)m2.invoke(st);
-            } catch (NoSuchMethodException e) {
-            } catch (IllegalAccessException e) {
-            } catch (InvocationTargetException e) {
+                m2 = st.getClass().getDeclaredMethod("getAge"); // st 객체의 클래스를 얻고 그 클래스에서 정의된 메소드를 얻는데 getAge_new라는 이름의 메소드를 얻습니다.
+                age = (int)m2.invoke(st); // st 객체 에 저장된 m2에 해당하는 메소드를 가지고 옵니다. 그 메소드의 리턴 값을 int형으로 타입캐스팅하고 그 값을 age에 저장합니다.
+            } catch (NoSuchMethodException e) { // NoSuchMethodException 받아주기
+            } catch (IllegalAccessException e) { // IllegalAccessException 받아주기
+            } catch (InvocationTargetException e) { // InvocationTargetException 받아주기
             }
         }
-        System.out.println("Annotation_11 : Age = " + age);
+        System.out.println("Annotation_11 : Age = " + age); // age의 값 출력
     }
 }
 
