@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/W1_Sorce" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/W2_class" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/W3_package" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/W4_refclass" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/W5_inheritanceField" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/W6_inheritanceMethod" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/W7_inheritanceClass" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

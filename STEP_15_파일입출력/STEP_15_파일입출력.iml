@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/H1" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/H3" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/H4" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/H5" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/H6" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/H8" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/W1_bynaryIO" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/W2_typeIO" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/W3_textIO" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/W4_stringIO" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/W5_Stringtokenizer" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/W6_objectFileSave" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/W7_randomAccessFile" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

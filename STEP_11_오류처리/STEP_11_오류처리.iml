@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/H1_Exception" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/W1_return" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/W2_throwTryCatch" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/W3_throwNextMethod" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/W4_throwMultiException" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/W5_catchPolymorphism" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/W6_finally" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/W7_whyNeedFinally" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/W8_thatIsReason" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/W9_manyExceptions" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
